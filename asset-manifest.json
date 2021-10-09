@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/RickMortyApi/static/css/main.fd740fd7.chunk.css",
-    "main.js": "/RickMortyApi/static/js/main.f680284f.chunk.js",
-    "main.js.map": "/RickMortyApi/static/js/main.f680284f.chunk.js.map",
+    "main.js": "/RickMortyApi/static/js/main.5ba0531b.chunk.js",
+    "main.js.map": "/RickMortyApi/static/js/main.5ba0531b.chunk.js.map",
     "runtime-main.js": "/RickMortyApi/static/js/runtime-main.961c821c.js",
     "runtime-main.js.map": "/RickMortyApi/static/js/runtime-main.961c821c.js.map",
-    "static/js/2.9edca104.chunk.js": "/RickMortyApi/static/js/2.9edca104.chunk.js",
-    "static/js/2.9edca104.chunk.js.map": "/RickMortyApi/static/js/2.9edca104.chunk.js.map",
+    "static/js/2.3230da01.chunk.js": "/RickMortyApi/static/js/2.3230da01.chunk.js",
+    "static/js/2.3230da01.chunk.js.map": "/RickMortyApi/static/js/2.3230da01.chunk.js.map",
     "static/js/3.89b17d57.chunk.js": "/RickMortyApi/static/js/3.89b17d57.chunk.js",
     "static/js/3.89b17d57.chunk.js.map": "/RickMortyApi/static/js/3.89b17d57.chunk.js.map",
     "index.html": "/RickMortyApi/index.html",
     "static/css/main.fd740fd7.chunk.css.map": "/RickMortyApi/static/css/main.fd740fd7.chunk.css.map",
-    "static/js/2.9edca104.chunk.js.LICENSE.txt": "/RickMortyApi/static/js/2.9edca104.chunk.js.LICENSE.txt"
+    "static/js/2.3230da01.chunk.js.LICENSE.txt": "/RickMortyApi/static/js/2.3230da01.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.961c821c.js",
-    "static/js/2.9edca104.chunk.js",
+    "static/js/2.3230da01.chunk.js",
     "static/css/main.fd740fd7.chunk.css",
-    "static/js/main.f680284f.chunk.js"
+    "static/js/main.5ba0531b.chunk.js"
   ]
 }
