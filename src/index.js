@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from "../src/screens/home/Home";
+import Controller from "./screens/Controller";
 
-ReactDOM.render(<Home />, document.getElementById("root"));
+ReactDOM.render(<Controller />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
