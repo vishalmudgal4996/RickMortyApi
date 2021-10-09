@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Home from "../src/screens/home/Home";
 import Controller from "./screens/Controller";
 
 ReactDOM.render(<Controller />, document.getElementById("root"));
