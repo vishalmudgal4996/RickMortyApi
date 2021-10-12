@@ -18,10 +18,7 @@ class Controller extends Component {
             path={"/RickMortyApi/"}
             render={(props) => <Home {...props} baseUrl={this.baseUrl} />}
           />
-          <Route
-            path={"/RickMortyApi/profile"}
-            render={(props) => <Profile {...props} baseUrl={this.baseUrl} />}
-          />
+          <Route path={'/RickMortyApi/profile/:id'} render={(props) => <Profile {...props} baseUrl={this.baseUrl} />} />
         </div>
       </Router>
     );

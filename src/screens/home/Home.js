@@ -1,46 +1,57 @@
-import React, { Component } from "react";
+import React, { useState, useEffect, Component } from "react";
 import Header from "../../common/header/Header";
 import "./Home.css";
-//import { withStyles } from "@material-ui/core/styles";
+import axios from "axios";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardMedia from '@mui/material/CardMedia';
+import { Link } from "react-router-dom";
 
-// const styles = (theme) => ({
-//   root: {
-//     display: "flex",
-//     justifyContent: "space-around",
-//     overflow: "hidden",
-//     backgroundColor: theme.palette.background.paper,
-//   },
-//   gridListMain: {
-//     transform: "translateZ(0)",
-//   },
-//   title: {
-//     color: theme.palette.primary.light,
-//   },
-//   titleBar: {
-//     background:
-//       "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
-//   },
-// });
+export default function Home() {
 
-class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+  const [chars, setChars] = useState([]);
 
-  componentDidMount() {}
+  useEffect(() => {
 
-  render() {
-    //const { classes } = this.props;
-    return (
-      <div>
-        <Header />
-        Welcome to RickMorty!
+    axios
+      .get("https://rickandmortyapi.com/api/character/")
+      .then(res => {
+        setChars(res.data.results);
+      })
+      .catch(err => {
+        alert(err.message);
+      })
+  }, [])
+
+  console.log(chars);
+
+  return (
+    <div>
+      <Header />
+      <div className="container">
+        <div className="flex-container">
+          <div className="characters">
+            {chars.map((item, index) => (
+              <Link to={`/RickMortyApi/profile/${item.id}`} key={item.id}>
+                <Card sx={{ minWidth: 275 }} key={"char" + index} style={{ marginBottom: 0 + 'px' }}>
+                  <CardMedia
+                    component="img"
+                    image={item.image}
+                    alt={item.name}
+                  />
+                  <CardActions style={{ justifyContent: "center", color: "black", fontWeight: "bolder" }}>
+                    {item.name}
+                  </CardActions>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
-    );
-  }
+    </div>
+
+
+  );
+
+
 }
-
-export default Home;
-
-//export default withStyles(styles)(Home);
