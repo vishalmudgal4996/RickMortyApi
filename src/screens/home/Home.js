@@ -32,7 +32,7 @@ export default function Home() {
         <div className="flex-container">
           <div className="characters">
             {chars.map((item, index) => (
-              <Link to={`/item/${item.id}`} key={item.id}>
+              <Link to={`/RickMortyApi/profile/${item.id}`} key={item.id}>
                 <Card sx={{ minWidth: 275 }} key={"char" + index} style={{ marginBottom: 0 + 'px' }}>
                   <CardMedia
                     component="img"

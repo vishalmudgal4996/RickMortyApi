@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+}
+
+.navigation-panel{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+   }
+
+   .flex-container-solochar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  .characters-solochar{
+    display: flex;
+  }
